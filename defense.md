@@ -21,9 +21,14 @@ ssh level00@192.168.56.4 -p 4242
 ls -la
 ```
 
+<img width="930" alt="Screen Shot 2022-11-26 at 13 27 34" src="https://user-images.githubusercontent.com/84193980/204084308-e3e81a1f-ec1e-465b-bc8e-02f1ae96c0d2.png">
+
 ```
 ./level00
 ```
+
+<img width="930" alt="Screen Shot 2022-11-26 at 13 30 12" src="https://user-images.githubusercontent.com/84193980/204084321-0029400b-d4eb-45f5-83a8-14bcf2e9b1a5.png">
+
 # LEVEL 01
 
 
