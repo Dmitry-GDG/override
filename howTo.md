@@ -83,12 +83,9 @@ VBoxManage convertfromraw --format VDI OverRide.iso OverRide.vdi
 
 7. Launch VM. At the top venu your VM choose "View" -> "Virtual screen 1" -> "Scale to 275%" and get the IP address of the website to be audited 
 
-<img width="1200" alt="Screen Shot 2022-11-11 at 11 16 21" src="https://user-images.githubusercontent.com/84193980/201297810-9f5e8917-2f55-4ee0-96ad-2d347395af7f.png">
+<img width="721" alt="Screen Shot 2022-11-26 at 12 53 36" src="https://user-images.githubusercontent.com/84193980/204082890-99e880e2-4cf5-47ac-9344-d9beee74969a.png">
 
-8. That's all. Next step you will do on your Mac: type this IP address into your browser (?) and audit the website. Good luck!
-
-<img width="1276" alt="Screen Shot 2022-11-11 at 11 23 36" src="https://user-images.githubusercontent.com/84193980/201297804-96514ae7-6e1f-46de-b987-7e2d2c776cee.png">
-
+8. That's all. Next step you will do on your Mac: type this IP address into terminal (?) and audit it. Good luck!
 
 | [README](README.md) | [subject](subject_ru.md) | How to start a web server | [defense](defense.md) |
 |-|-|-|-|
