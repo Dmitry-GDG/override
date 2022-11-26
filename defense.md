@@ -15,6 +15,8 @@ ssh level00@192.168.56.4 -p 4242
 >> password: level00
 ```
 
+<img width="930" alt="Screen Shot 2022-11-26 at 13 20 54" src="https://user-images.githubusercontent.com/84193980/204084033-b951cae2-1a89-4afd-b896-df757f926dad.png">
+
 # LEVEL 01
 
 
