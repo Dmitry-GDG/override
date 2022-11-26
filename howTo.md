@@ -81,7 +81,7 @@ VBoxManage convertfromraw --format VDI OverRide.iso OverRide.vdi
 
 6. Take shapshot of your VM
 
-7. Launch VM. At the top menu of your VM choose "View" -> "Virtual screen 1" -> "Scale to 275%" and get the IP address of the website to be audited 
+7. Launch VM. At the top menu of your VM choose "View" -> "Virtual screen 1" -> "Scale to 275%" and get the IP address to be audited 
 
 <img width="721" alt="Screen Shot 2022-11-26 at 12 53 36" src="https://user-images.githubusercontent.com/84193980/204082890-99e880e2-4cf5-47ac-9344-d9beee74969a.png">
 
