@@ -25,7 +25,7 @@ VBoxManage convertfromraw --format VDI OverRide.iso OverRide.vdi
 	<img width="64" alt="Screen Shot 2022-11-11 at 10 34 41" src="https://user-images.githubusercontent.com/84193980/201290340-7b50b622-ff19-4ec3-b8c1-f2405667ffa6.png">
 
 	- choose Darkly_i386.vdi -> "Open" -> "Choose" 
-	- fill "Name" field (darkly) and type "Create".
+	- fill "Name" field (override) and type "Create".
 
 4. **Create a new host-only adapter in VirtualBox**. Create the Virtual Network. First, you must set up a virtual network that the host-only adapter(s) will communicate through.
 
@@ -51,7 +51,7 @@ VBoxManage convertfromraw --format VDI OverRide.iso OverRide.vdi
 
 5. **Add a Host-Only Adapter to the Guest Machine.** For each guest you want to communicate with using the network from the previous step, you need to add a host-only adapter.
 
-	- Select the appropriate guest machine (darkly)
+	- Select the appropriate guest machine (override)
 
 	- Click Settings -> Network
 
