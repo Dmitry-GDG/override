@@ -85,7 +85,9 @@ VBoxManage convertfromraw --format VDI OverRide.iso OverRide.vdi
 
 <img width="721" alt="Screen Shot 2022-11-26 at 12 53 36" src="https://user-images.githubusercontent.com/84193980/204082890-99e880e2-4cf5-47ac-9344-d9beee74969a.png">
 
-8. That's all. Next step you will do on your Mac: type this IP address into terminal (?) and audit it. Good luck!
+8. That's all. Next step you will do on your Mac: type this IP address into terminal (?) and audit it. 
+
+Good luck!
 
 | [README](README.md) | [subject](subject_ru.md) | How to start a web server | [defense](defense.md) |
 |-|-|-|-|
