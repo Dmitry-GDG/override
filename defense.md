@@ -38,6 +38,8 @@ gdb level00
 (gdb) disass main
 ```
 
+<img width="586" alt="Screen Shot 2022-11-26 at 15 29 33" src="https://user-images.githubusercontent.com/84193980/204092423-1d4b2e94-1cac-4ed2-a31b-f95c6c6208ba.png">
+
 ```main()``` calls ```scanf()``` to read the password from stdin
 
 
@@ -58,11 +60,15 @@ then compares given password with value ```0x149c``` (5276 in decimal). (https:/
 Password:5276
 ```
 
+<img width="581" alt="Screen Shot 2022-11-26 at 15 49 44" src="https://user-images.githubusercontent.com/84193980/204092462-ad51f3fd-67ab-4532-871c-0056f41a8eaa.png">
+
 The 5276 was accepted!
 
 ```
 whoami
 ```
+
+<img width="584" alt="Screen Shot 2022-11-26 at 15 51 46" src="https://user-images.githubusercontent.com/84193980/204092495-ec9c1049-5741-4887-9f2b-f41d5b33d2ec.png">
 
 ```
 ls -la
@@ -71,6 +77,7 @@ ls -la
 ```
 cd /
 ls -la
+```
 
 
 Sources:
