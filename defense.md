@@ -74,6 +74,8 @@ whoami
 ls -la
 ```
 
+<img width="584" alt="Screen Shot 2022-11-26 at 15 53 03" src="https://user-images.githubusercontent.com/84193980/204092556-b536aeb7-0364-4b13-ab32-5d7cba50aa2f.png">
+
 ```
 cd /
 ls -la
