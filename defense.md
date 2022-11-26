@@ -29,9 +29,11 @@ ls -la
 
 <img width="930" alt="Screen Shot 2022-11-26 at 13 30 12" src="https://user-images.githubusercontent.com/84193980/204084321-0029400b-d4eb-45f5-83a8-14bcf2e9b1a5.png">
 
-We find a binary ```level00``` with owner ```level01``` and SUID.
+We need a correct password
 
-Lets try to gnb ```level00```:
+We find a binary ```level00``` with owner ```level01``` and SUID (A file with SUID always executes as the user who owns the file).
+
+Lets try to gdb ```level00``` (The purpose of a debugger such as GDB is to allow you to see what is going on "inside" another program while it executes -- or what  another program was doing):
 
 ```
 gdb level00 
@@ -56,6 +58,7 @@ then compares given password with value ```0x149c``` (5276 in decimal). (https:/
 
 
 ```
+q
 ./level00 
 Password:5276
 ```
@@ -70,6 +73,8 @@ whoami
 
 <img width="584" alt="Screen Shot 2022-11-26 at 15 51 46" src="https://user-images.githubusercontent.com/84193980/204092495-ec9c1049-5741-4887-9f2b-f41d5b33d2ec.png">
 
+Try to find the password for level01
+
 ```
 ls -la
 ```
@@ -77,10 +82,19 @@ ls -la
 <img width="584" alt="Screen Shot 2022-11-26 at 15 53 03" src="https://user-images.githubusercontent.com/84193980/204092556-b536aeb7-0364-4b13-ab32-5d7cba50aa2f.png">
 
 ```
-cd /
+cd /home/users/level01
 ls -la
+cat .pass
 ```
 
+
+Password: uSq2ehEGT6c9S24zbshexZQBXUGrncxn5sD5QfGL
+
+```
+exit
+su level01
+Password: uSq2ehEGT6c9S24zbshexZQBXUGrncxn5sD5QfGL
+```
 
 Sources:
 - https://beta.hackndo.com/retour-a-la-libc/
