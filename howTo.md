@@ -53,6 +53,11 @@ VBoxManage convertfromraw --format VDI OverRide.iso OverRide.vdi
 
 	- Select the appropriate guest machine (override)
 
+	- Click Settings -> Аudio
+	```
+	Enable Audio: Unchecked
+	```
+
 	- Click Settings -> Network
 
 	- Under the Adapter tab, input the following settings:
