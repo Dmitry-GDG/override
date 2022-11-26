@@ -18,7 +18,7 @@ VBoxManage convertfromraw --format VDI OverRide.iso OverRide.vdi
 	- choose folder "Machine folder" with enough disk space (on schools Macs - goinfre)
 	- Go to th "Expert mode"
 	
-	<img width="723" alt="Screen Shot 2022-11-11 at 10 27 46" src="https://user-images.githubusercontent.com/84193980/201290266-6d2d81cf-b6a7-44ce-b384-e7961254270f.png">
+	<img width="697" alt="Screen Shot 2022-11-26 at 12 41 14" src="https://user-images.githubusercontent.com/84193980/204082490-2f7fa2a1-d457-4caf-97e2-5e787598fc68.png">
 
 	- Choose "Use an existing virtual hard disk drive" -> Click "Add" button
 	
@@ -57,6 +57,8 @@ VBoxManage convertfromraw --format VDI OverRide.iso OverRide.vdi
 	```
 	Enable Audio: Unchecked
 	```
+	
+	<img width="649" alt="Screen Shot 2022-11-26 at 12 32 24" src="https://user-images.githubusercontent.com/84193980/204082499-7378cbd3-5580-42ed-aadf-b35e29143eb5.png">
 
 	- Click Settings -> Network
 
@@ -68,7 +70,7 @@ VBoxManage convertfromraw --format VDI OverRide.iso OverRide.vdi
 	In "Promiscuous Mode" select "Allow VMs"
 	```
 
-	<img width="653" alt="Screen Shot 2022-11-11 at 11 01 11" src="https://user-images.githubusercontent.com/84193980/201295011-dbbaa805-d7f9-400a-8658-72c3a770c027.png">
+	<img width="649" alt="Screen Shot 2022-11-26 at 12 29 27" src="https://user-images.githubusercontent.com/84193980/204082505-1b8cacb1-0f34-4301-9e02-9157b4740139.png">
 
 	- Click OK
 
