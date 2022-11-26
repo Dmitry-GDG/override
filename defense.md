@@ -47,11 +47,11 @@ gdb level00
 
 ```
 0x080484d3 <+63>:	lea    0x1c(%esp),%edx
-0x080484d7 <+67>:	mov    %edx,0x4(%esp) //address to store password
-0x080484db <+71>:	mov    %eax,(%esp) // load arg 2 - address to store password
+0x080484d7 <+67>:	mov    %edx,0x4(%esp)                 // address to store password
+0x080484db <+71>:	mov    %eax,(%esp)                    // load arg 2 - address to store password
 0x080484de <+74>:	call   0x80483d0 <__isoc99_scanf@plt> // scanf() reads stdin
-0x080484e3 <+79>:	mov    0x1c(%esp),%eax //load scanf() return (password)
-0x080484e7 <+83>:	cmp    $0x149c,%eax //compare password = 5276
+0x080484e3 <+79>:	mov    0x1c(%esp),%eax                // load scanf() return (password)
+0x080484e7 <+83>:	cmp    $0x149c,%eax                   // compare password = 5276
 ```
 
 then compares given password with value ```0x149c``` (5276 in decimal). (https://binary2hex.ru/numberconverter.html?id=1625627)
