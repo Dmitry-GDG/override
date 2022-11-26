@@ -87,6 +87,7 @@ ls -la
 cat .pass
 ```
 
+<img width="584" alt="Screen Shot 2022-11-26 at 17 26 43" src="https://user-images.githubusercontent.com/84193980/204094116-e159d88d-68a5-429f-829c-906c27cf708f.png">
 
 Password: uSq2ehEGT6c9S24zbshexZQBXUGrncxn5sD5QfGL
 
@@ -95,6 +96,8 @@ exit
 su level01
 Password: uSq2ehEGT6c9S24zbshexZQBXUGrncxn5sD5QfGL
 ```
+
+<img width="851" alt="Screen Shot 2022-11-26 at 17 32 05" src="https://user-images.githubusercontent.com/84193980/204094109-83d52c04-5c54-4b29-a529-0639e7d5f3f0.png">
 
 Sources:
 - https://beta.hackndo.com/retour-a-la-libc/
