@@ -104,26 +104,7 @@ Sources:
 
 # LEVEL 01
 
-```
-ls -la
-```
 
-
-
-```
-./level01
-```
-
-We need a correct password
-
-We find a binary ```level01``` with owner ```users``` and SUID (A file with SUID always executes as the user who owns the file).
-
-Lets try to gdb ```level01``` (The purpose of a debugger such as GDB is to allow you to see what is going on "inside" another program while it executes -- or what  another program was doing):
-
-```
-gdb level01 
-(gdb) disass main
-```
 
 # LEVEL 02
 
