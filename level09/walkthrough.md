@@ -1,3 +1,5 @@
+[back](../defense.md)
+
 Переполнение буфера
 
 level08@OverRide:~$ su level09
@@ -209,3 +211,5 @@ end@OverRide:~$ cat end
 end@OverRide:~$ 
 
 Good Game !
+
+[back](../defense.md)

@@ -1,3 +1,5 @@
+[back](../defense.md)
+
 Через линк можно скопировать пароль
 
 level07@OverRide:~$ su level08
@@ -79,3 +81,5 @@ Password: fjAwpJNs2vvkFLRebEvAQ2hFZ4uQBWfHRsP62d8S
 
 level09@OverRide:~$ cd /home/users/level09
 level09@OverRide:~$ ls -la
+
+[back](../defense.md)
